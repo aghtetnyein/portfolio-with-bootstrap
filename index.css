@@ -71,16 +71,13 @@ nav > .menu {
 }
 
 #headline > .social-accounts {
+  list-style: none;
+  padding: 0;
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 0.8rem 0;
   margin-top: 2rem;
-}
-
-#headline > .social-accounts {
-  list-style: none;
-  padding: 0;
 }
 
 #headline > .social-accounts > li > a > i {
