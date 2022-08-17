@@ -6,7 +6,7 @@ body {
   left: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   font-size: 14px;
 }
@@ -22,6 +22,8 @@ nav {
 }
 
 nav > .logo {
+  color: white;
+  text-decoration: none;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -33,8 +35,12 @@ nav > .menu {
 
 #headline {
   background-color: #1c1a19;
-  padding: 9rem 1.7rem;
+  padding: 10rem 1.7rem;
   position: relative;
+  background-image: url(./assets/images/headline-section-illustration.png);
+  background-repeat: no-repeat;
+  background-position: 52vw 27rem;
+  background-size: auto 30rem;
 }
 
 #headline > .big-intro {
@@ -72,15 +78,14 @@ nav > .menu {
   margin-top: 2rem;
 }
 
-#headline > .social-accounts > a > i {
-  color: #fff;
-  font-size: 1.7rem;
+#headline > .social-accounts {
+  list-style: none;
+  padding: 0;
 }
 
-#headline > .illustration {
-  position: absolute;
-  height: 23rem;
-  width: 29rem;
-  left: 12rem;
-  top: 30rem;
+#headline > .social-accounts > li > a > i {
+  color: #fff;
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0;
 }
