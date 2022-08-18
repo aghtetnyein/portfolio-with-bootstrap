@@ -110,12 +110,18 @@ nav > .menu {
 }
 
 #works > .title > h2 {
-  font-family: Crete Round;
+  font-family: "Crete Round", serif;
   font-size: 2.8rem;
   font-weight: 400;
   line-height: 3.7rem;
-  letter-spacing: 0em;
   text-align: left;
+}
+
+#about-me > .line {
+  width: 100%;
+  margin-top: 15rem;
+  height: 1px;
+  background: #fff;
 }
 
 #works > .title > .line {
@@ -136,18 +142,17 @@ nav > .menu {
 #works > .sample-work > h3,
 #works > .works-grid > .work-item > .work-item-content > h3 {
   margin: 2rem 0 0.8rem 0;
-  font-family: Crete Round;
+  font-family: "Crete Round", serif;
   font-size: 2.3rem;
   font-weight: 400;
   line-height: 3.1rem;
-  letter-spacing: 0em;
   text-align: left;
 }
 
 #works > .sample-work > p,
 #works > .works-grid > .work-item > .work-item-content > p {
   margin: 0.8rem 0;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.1rem;
@@ -165,7 +170,7 @@ nav > .menu {
 }
 
 #works > .sample-work > .tags > .tag-item {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -173,6 +178,29 @@ nav > .menu {
   color: #091e42;
   border: 1px solid #091e42;
   padding: 0.7rem 0.8rem;
+}
+
+#about-me > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.85rem;
+  border: none;
+  background: #ff6b00;
+  height: 3.4rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: white;
+}
+
+#about-me > button:hover {
+  background: #cc5602;
+  cursor: pointer;
 }
 
 #works > .sample-work > button {
@@ -183,14 +211,18 @@ nav > .menu {
   padding: 0.85rem;
   border: none;
   background: #ff6b00;
-  /* width: 8.85rem; */
   height: 3.4rem;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: white;
+}
+
+#works > .sample-work > button:hover {
+  background: #cc5602;
+  cursor: pointer;
 }
 
 #works > .works-grid {
@@ -203,12 +235,7 @@ nav > .menu {
 
 #works > .works-grid > .work-item {
   background-color: #f5f5f5;
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url("./assets/images/work-img-2.png");
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./assets/images/work-img-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,7 +247,7 @@ nav > .menu {
 }
 
 #works > .works-grid > .work-item > .work-item-content > .tags > .tag-item {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -237,8 +264,7 @@ nav > .menu {
   border: none;
   width: 100%;
   padding: 0.85rem;
-  /* fontstyle */
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -246,37 +272,9 @@ nav > .menu {
   color: white;
 }
 
-#about-me > button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.5rem;
-  padding: 0.85rem;
-  border: none;
-  background: #ff6b00;
-  /* width: 8.85rem; */
-  height: 3.4rem;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: white;
-}
-
-#works > .sample-work > button:hover,
-#works > .works-grid > .work-item > button:hover,
-#about-me > button:hover {
-  background: #cc5602;
+#works > .works-grid > .work-item > button:hover {
+  background-color: #cc5602;
   cursor: pointer;
-}
-
-#about-me > .line {
-  width: 100%;
-  margin-top: 15rem;
-  height: 1px;
-  background: #fff;
 }
 
 #about-me > .language-skills-grid {
@@ -297,12 +295,12 @@ nav > .menu {
   text-align: center;
 }
 
-#about-me > .language-skills-grid > .item > span {
+#about-me > .language-skills-grid > .item > div {
   display: flex;
   align-items: center;
 }
 
-#about-me > .language-skills-grid > .item > span > .language {
+#about-me > .language-skills-grid > .item > div > .language {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -310,14 +308,14 @@ nav > .menu {
   transform: rotate(-45deg);
 }
 
-#about-me > .language-skills-grid > .item > span > .frameworks {
+#about-me > .language-skills-grid > .item > div > .frameworks {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
   background-color: #ff6b00;
 }
 
-#about-me > .language-skills-grid > .item > span > .skills {
+#about-me > .language-skills-grid > .item > div > .skills {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -325,8 +323,8 @@ nav > .menu {
   border-radius: 50%;
 }
 
-#about-me > .language-skills-grid > .item > span > h5 {
-  font-family: "Inter";
+#about-me > .language-skills-grid > .item > div > h5 {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -342,7 +340,7 @@ nav > .menu {
 }
 
 #about-me > .language-skills-grid > .item > ul > li {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
