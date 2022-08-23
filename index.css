@@ -192,7 +192,8 @@ nav > .menu {
   padding: 0.7rem 0.8rem;
 }
 
-#about-me > button {
+#about-me > button,
+#contact-form > form > ul > li > button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -210,7 +211,8 @@ nav > .menu {
   color: white;
 }
 
-#about-me > button:hover {
+#about-me > button:hover,
+#contact-form > form > ul > li > button:hover {
   background: #cc5602;
   cursor: pointer;
 }
@@ -367,4 +369,79 @@ nav > .menu {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
+}
+
+#contact-form {
+  padding: 7rem 1.7rem;
+}
+
+#contact-form > h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.3rem;
+  line-height: 3.14rem;
+  font-weight: 700;
+  letter-spacing: 0rem;
+  text-align: center;
+  color: #172b4d;
+}
+
+#contact-form > form {
+  padding: 4rem 0 0 0;
+}
+
+#contact-form > form > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact-form > form > ul > li > label {
+  display: none;
+}
+
+#contact-form > form > ul li + li {
+  margin-top: 1em;
+}
+
+#contact-form > form > ul > li > input,
+#contact-form > form > ul > li > textarea {
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  /* border: none; */
+  background-color: #fafafa;
+}
+
+#contact-form > form > ul > li > input:focus,
+#contact-form > form > ul > li > textarea:focus {
+  border: 1px solid #aaa;
+}
+
+#contact-form > form > ul > li {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  padding: 1.2rem 1.7rem;
+}
+
+footer > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+footer > ul > li > i {
+  font-size: 1.5rem;
+  color: #505f79;
 }
