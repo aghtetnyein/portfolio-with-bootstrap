@@ -8,7 +8,8 @@
 
 - HTML, CSS, Javascript
 
-## Getting Started
+## Screen Short
+<img width="242" alt="screen short" src="https://user-images.githubusercontent.com/108806646/186366097-f0d8adf9-faec-4ff2-b661-bc5e043feb9b.png">
 
 ### Prerequisites
 
@@ -19,11 +20,17 @@
 
 - npm install
 
-## Authors
+## Authors 1
 
 👤 **Sa Aung Htet Nyein (SASA)**
 
 - GitHub: [@aghtetnyein](https://github.com/aghtetnyein)
+
+## Authors 2
+
+👤 **Olivier Kango (OLK)**
+
+- GitHub: [@olivier](https://github.com/Olivier-Kango)
 
 ## 🤝 Contributing
 
