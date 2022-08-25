@@ -27,6 +27,17 @@ nav > .logo {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  animation: letterSpace 0.5s;
+}
+
+@keyframes letterSpace {
+  from {
+    letter-spacing: -0.8rem;
+  }
+
+  to {
+    letter-spacing: 0rem;
+  }
 }
 
 nav > .nav-items {
@@ -132,6 +143,12 @@ footer > ul > li > i {
   letter-spacing: 0;
   text-align: center;
   color: #172b4d;
+  transition: 0.5s;
+}
+
+#contact-form > h2:hover {
+  cursor: default;
+  transform: translateX(2rem);
 }
 
 #works > .title {
@@ -171,12 +188,18 @@ footer > ul > li > i {
 
 #works > .sample-work > div {
   width: 100%;
+  overflow: hidden;
 }
 
 #works > .sample-work > div > img {
   width: 100%;
   height: auto;
   margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+#works > .sample-work > div > img:hover {
+  transform: scale(1.2);
 }
 
 #works > .sample-work > .work-content {
@@ -255,6 +278,7 @@ footer > ul > li > i {
   font-size: 17px;
   line-height: 24px;
   color: white;
+  transition: 0.3s;
 }
 
 #contact-form > form > ul > li > button {
@@ -272,6 +296,7 @@ footer > ul > li > i {
   font-size: 17px;
   line-height: 24px;
   color: white;
+  transition: 0.3s;
 }
 
 #about-me > button:hover {
@@ -301,6 +326,7 @@ footer > ul > li > i {
   font-size: 17px;
   line-height: 24px;
   color: white;
+  transition: 0.3s;
 }
 
 #contact-form > form > ul > li > button:hover {
@@ -330,6 +356,7 @@ footer > ul > li > i {
   font-size: 17px;
   line-height: 24px;
   color: white;
+  transition: 0.3s;
 }
 
 #works > .sample-work > div > button:hover {
@@ -357,11 +384,22 @@ footer > ul > li > i {
 }
 
 #works > .works-grid > .work-item {
+  overflow: hidden;
   background-color: #f5f5f5;
-  background-image: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url("./assets/images/work-img-2.png");
+  background-image: linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    ),
+    url("./assets/images/work-img-2.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 26rem 31rem;
+  transition: 0.5s;
+}
+
+#works > .works-grid > .work-item:hover {
+  background-size: 39rem 46.5rem;
 }
 
 #works > .works-grid > .work-item > .work-item-content {
@@ -640,7 +678,7 @@ footer {
   }
 
   #works > .works-grid > .work-item > .work-item-content {
-    padding: 8rem 1.3rem 1rem 1.3rem;
+    padding: 10rem 1.3rem 1rem 1.3rem;
   }
 
   #about-me > button {
