@@ -275,8 +275,15 @@ footer > ul > li > i {
 }
 
 #about-me > button:hover {
-  background: #cc5602;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
   cursor: pointer;
+}
+
+#about-me > button:focus {
+  background-color: #e05304;
+  color: #fff;
 }
 
 #works > .sample-work > div > button {
@@ -297,8 +304,15 @@ footer > ul > li > i {
 }
 
 #contact-form > form > ul > li > button:hover {
-  background: #cc5602;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
   cursor: pointer;
+}
+
+#contact-form > form > ul > li > button:focus {
+  background-color: #e05304;
+  color: #fff;
 }
 
 #works > .works-grid > .work-item > button {
@@ -319,8 +333,15 @@ footer > ul > li > i {
 }
 
 #works > .sample-work > div > button:hover {
-  background: #cc5602;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
   cursor: pointer;
+}
+
+#works > .sample-work > div > button:focus {
+  background-color: #e05304;
+  color: #fff;
 }
 
 #works > .works-grid {
@@ -362,8 +383,15 @@ footer > ul > li > i {
 }
 
 #works > .works-grid > .work-item > button:hover {
-  background-color: #cc5602;
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
   cursor: pointer;
+}
+
+#works > .works-grid > .work-item > button:focus {
+  background-color: #e05304;
+  color: #fff;
 }
 
 #about-me > .language-skills-grid {
@@ -500,10 +528,41 @@ footer {
   padding: 1.2rem 1.7rem;
 }
 
-/* For tablets and desktops */
+/* For Tablets */
 @media (min-width: 768px) {
   nav {
-    padding: 0.3rem 12rem;
+    padding: 0.3rem 4rem;
+  }
+
+  #headline {
+    padding: 12rem 4rem;
+    background-position: 60vw 28rem;
+    background-size: auto 30rem;
+  }
+
+  #works {
+    padding: 4rem 4rem;
+  }
+
+  #works > .works-grid {
+    grid-gap: 2rem;
+  }
+
+  #about-me {
+    padding: 12rem 4rem;
+    background-position: right 20rem;
+    background-size: auto 22rem;
+  }
+
+  #contact-form {
+    padding: 7rem 4rem;
+  }
+}
+
+/* For Ipads */
+@media (min-width: 1024px) {
+  nav {
+    padding: 0.3rem 8rem;
   }
 
   nav > .nav-items {
@@ -515,9 +574,9 @@ footer {
   }
 
   #headline {
-    padding: 12rem;
+    padding: 12rem 8rem;
     background-position: center right;
-    background-size: auto 45rem;
+    background-size: auto 35rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -525,10 +584,10 @@ footer {
   }
 
   #about-me {
-    padding: 12rem;
+    padding: 12rem 8rem;
     background-image: url("./assets/images/about-me-section-desktop-illustration.png");
-    background-position: right 8rem;
-    background-size: auto 22rem;
+    background-position: right 15rem;
+    background-size: auto 15rem;
   }
 
   #headline > .big-intro > span {
@@ -547,7 +606,7 @@ footer {
   }
 
   #works {
-    padding: 4rem 12rem;
+    padding: 4rem 8rem;
   }
 
   #works > .title {
@@ -610,7 +669,7 @@ footer {
   }
 
   #contact-form {
-    padding: 7rem 12rem;
+    padding: 7rem 8rem;
     display: flex;
     align-items: flex-start;
     gap: 5rem;
@@ -623,5 +682,31 @@ footer {
 
   #contact-form > form > ul > li {
     justify-content: flex-start;
+  }
+}
+
+/* For desktops */
+@media (min-width: 1440px) {
+  nav {
+    padding: 0.3rem 12rem;
+  }
+
+  #headline {
+    padding: 12rem;
+    background-size: auto 45rem;
+  }
+
+  #works {
+    padding: 4rem 12rem;
+  }
+
+  #about-me {
+    padding: 12rem;
+    background-position: right 8rem;
+    background-size: auto 22rem;
+  }
+
+  #contact-form {
+    padding: 7rem 12rem;
   }
 }
