@@ -8,8 +8,13 @@
 
 - HTML, CSS, Javascript
 
-## Screen Short
-<img width="242" alt="screen short" src="https://user-images.githubusercontent.com/108806646/186366097-f0d8adf9-faec-4ff2-b661-bc5e043feb9b.png">
+## Screenshot for Desktop version
+
+<img width="1440" alt="Desktop_Screenshot" src="https://user-images.githubusercontent.com/108806646/186719609-9714ec74-f4f0-44bc-b844-9c27a27a5379.png">
+
+
+## Screenshot for Desktop version
+<img width="335" alt="Mobile_Screenshot" src="https://user-images.githubusercontent.com/108806646/186719970-a7beecae-23ce-4f73-8538-06886d7c6d77.png">
 
 ### Prerequisites
 
@@ -48,5 +53,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
